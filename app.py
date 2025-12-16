@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 from langchain_core.prompts import PromptTemplate
 from langchain_google_genai import ChatGoogleGenerativeAI
 from PyPDF2 import PdfReader
-
+ 
 # Load API key from .env
 load_dotenv()
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
@@ -113,3 +113,4 @@ if st.button("🔍 Analyze Resume"):
 
             except Exception as e:
                 st.error(f"❌ Error: {str(e)}")
+
