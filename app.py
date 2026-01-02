@@ -114,3 +114,4 @@ if st.button("🔍 Analyze Resume"):
             except Exception as e:
                 st.error(f"❌ Error: {str(e)}")
 
+
